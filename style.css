@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background: radial-gradient(circle at top left, #111926, #0d1117, #05080f);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #f2f2f2;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 18px;
+  padding: 35px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 0 30px rgba(0, 255, 170, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #00ffc3;
+  box-shadow: 0 0 10px rgba(0, 255, 195, 0.3);
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 38px;
+}
+
+select option {
+  background-color: #121c25;
+  color: #ffffff;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #00ffc3, #00bcd4);
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 12px rgba(0, 255, 195, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00bcd4, #00ffc3);
+  transform: scale(1.03);
+  box-shadow: 0 0 16px rgba(0, 255, 195, 0.4);
+}
+
+#specialization-container {
+  margin-top: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 25px;
+  }
+}

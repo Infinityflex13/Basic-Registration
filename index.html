@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>University Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>University Registration Form</h2>
+  <form action="#" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number">
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="course">Course Applying For:</label>
+    <select id="course" name="course" onchange="updateSpecializations()" required>
+      <option value="">--Select Course--</option>
+      <option value="btech">B.Tech</option>
+      <option value="bsc">B.Sc</option>
+      <option value="bcom">B.Com</option>
+      <option value="ba">B.A.</option>
+      <option value="other">Other</option>
+    </select>
+
+    <div id="specialization-container" style="display: none;">
+      <label for="specialization">Specialization:</label>
+      <select id="specialization" name="specialization">
+        <option value="">--Select Specialization--</option>
+      </select>
+    </div>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # University Registration Form
 
-This project is a basic university registration form developed using HTML, CSS, and JavaScript. It features a dark-themed, responsive interface with dynamic dropdowns based on user selection.
+This project is a basic university registration form developed using HTML, CSS, and JavaScript. It features a dark-themed, responsive interface with dynamic dropdowns based on user selection.(just basic front end)
 
 ## Project Structure
 Basic-Registration/
@@ -18,8 +18,3 @@ Basic-Registration/
 
 1. Clone or download this repository.
 2. Open the `index.html` file in any modern web browser.
-
-## License
-
-This project is open source and available for use and modification.
-

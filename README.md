@@ -18,3 +18,6 @@ Basic-Registration/
 
 1. Clone or download this repository.
 2. Open the `index.html` file in any modern web browser.
+
+## Preview
+<img width="1658" height="1172" alt="image" src="https://github.com/user-attachments/assets/fe2a0a89-f2b5-4640-bb9a-b38419bd7e07" />
